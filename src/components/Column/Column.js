@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Column.scss';
 import Card from '../Card/Card.js';
+import Icon from '../Icon/Icon.js';
 import Creator from '../Creator/Creator.js';
 import {settings} from '../../data/dataStore';
 
 class Column extends React.Component {
   state = {
     cards: this.props.cards || [],
+    columns: this.props.columns || [],
   }
 
   static propTypes ={
@@ -31,7 +33,13 @@ class Column extends React.Component {
   render() {
     return (
       <section className={styles.component}>
-        <h3 className={styles.title}>{this.props.title}</h3>
+        <h3 className={styles.title}>{this.props.title}
+        <span className={styles.icon}>
+          {this.state.columns.map(({key, title, icon, cards}) => (
+            <Icon name={icon} />
+          ))}
+        </span>
+        </h3>
         <div>
           {this.state.cards.map(({key, ...columnProps}) => (
             <Card key={key} {...columnProps} />
