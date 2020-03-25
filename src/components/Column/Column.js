@@ -35,9 +35,7 @@ class Column extends React.Component {
       <section className={styles.component}>
         <h3 className={styles.title}>{this.props.title}
         <span className={styles.icon}>
-          {this.state.columns.map(({key, title, icon, cards}) => (
-            <Icon name={icon} />
-          ))}
+            <Icon name={this.props.icon} />
         </span>
         </h3>
         <div>
