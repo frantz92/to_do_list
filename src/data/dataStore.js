@@ -17,6 +17,7 @@ export const settings = {
 export const pageContents = {
   title: 'My first React app',
   subtitle: 'A simple to-do app, with lists, columns and cards',
+  icon: 'paw',
 };
 
 export const listData = {
@@ -70,6 +71,18 @@ export const listData = {
       ],
     },
   ],
+};
+
+export const infoContents = {
+  title: 'Informations about this page',
+  description: 'App "To do" is the first page I\'ve created using React and Redux. It may be quite an easy task, but surely it\'s a realy good job for a begginer. ;) ',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+};
+
+export const faqContents = {
+  title: 'frequently asked questions',
+  description: 'Here You can find som answers on how does this page works',
+  image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
 };
 
 const lists = [
