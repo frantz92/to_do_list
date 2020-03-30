@@ -38,7 +38,6 @@ class Column extends React.Component {
         </div>
       </section>
     );
-
   }
 }
 
