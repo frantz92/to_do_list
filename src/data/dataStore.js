@@ -88,8 +88,20 @@ export const faqContents = {
 const lists = [
   {
     id: 'list-1',
-    title: 'Things to do <sup>soon!</sup>',
-    description: 'Interesting things I want to check out!',
+    title: '<sup>Things to do</sup> soon!',
+    description: 'Really important things!',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-2',
+    title: '<sup>Things to do</sup> later!',
+    description: 'Thing that doesn\'t need rush.',
+    image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
+  },
+  {
+    id: 'list-3',
+    title: '<sup>Things to do</sup> this year!',
+    description: 'Plans & goals for this year.',
     image: 'http://uploads.kodilla.com/bootcamp/fer/11.react/space.png',
   },
 ];
