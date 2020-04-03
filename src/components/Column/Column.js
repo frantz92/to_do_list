@@ -13,6 +13,7 @@ class Column extends React.Component {
     cards: PropTypes.array,
     icon: PropTypes.string,
     addCard: PropTypes.func,
+    listId: PropTypes.string,
   }
 
   static defaultProps = {
@@ -20,6 +21,7 @@ class Column extends React.Component {
   }
 
   render() {
+    console.log('Column:', this.props);
     const {title, icon, cards, addCard} = this.props;
     return (
       <section className={styles.component}>
@@ -30,7 +32,7 @@ class Column extends React.Component {
         </h3>
         <div>
           {cards.map(cardData => (
-            <Card key={cardData.id} {...cardData} />
+            <Card key={cardData.id} {...cardData} listId={this.props.listId} />
           ))}
         </div>
         <div>

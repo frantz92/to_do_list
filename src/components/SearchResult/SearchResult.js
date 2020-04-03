@@ -11,8 +11,9 @@ const SearchResult = ({cards}) => {
       <section className={styles.component}>
         <div className={styles.cards}>{cards.map(cardData => (
           <div key={cardData.id} className={styles.wrapper}>
+            { console.log('searchresult',cards) }
             <Card key={cardData.id} {...cardData} />
-            <Link className={styles.link} to={`/list/$cardData.listId`}>
+            <Link className={styles.link} to={`/list/${cardData.listId}`}>
               <p>Go to the list</p>
             </Link>
           </div>
